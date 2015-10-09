@@ -61,20 +61,37 @@ h2 {
 
   }
 }
-@media only screen and (min-width: 28em) {
+@media only screen and (min-width: 30em) {
   html {
     font-size: 120%;
     line-height: 1.5;
-
   }
   main {
-    float: right;
-    width: 70%;
+    padding: 3em;
   }
   h1 {
-
+    padding-left: 200px;
   }
   h2 {
+    padding-left: 200px;
+  }
+  .portrait {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  div {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 45em) {
 
+  main {
+    padding: 6em;
+  }
+  p {
+    clear: both;
+    padding-top: 2em;
   }
 }
