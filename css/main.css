@@ -106,6 +106,10 @@ h2 {
     clear: both;
     padding-top: 2rem;
   }
+  .portrait{
+    top: 1em;
+    left: 2em;
+  }
 }
 @media print {
   html {
@@ -129,7 +133,7 @@ h2 {
   body {
     width: 3.5in;
     height: 2in;
-    border: 1px solid #000;
+    border: 1px dashed #000;
   }
   .portrait {
     width: 70px;
