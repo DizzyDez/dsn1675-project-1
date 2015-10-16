@@ -21,6 +21,11 @@ html {
 body {
   margin: 0;
 }
+header {
+  background-image: url("../img/colourbackground.jpg");
+  background-size: cover;
+  text-align: center;
+}
 .logo {
   width: 75px;
   background-color: #fff;
@@ -47,7 +52,7 @@ h2 {
   margin: 0;
   width: 100%;
   padding: 2em 0 .5em 0;
-  background-image: linear-gradient(to bottom, transparent, #4b2f48, #4b2f48);
+  background-image: linear-gradient(to bottom, transparent, #4b2f48, #4b2f48, #000);
 }
 .portrait {
   width: 50%;
@@ -62,22 +67,30 @@ h2 {
   display: inline-block;
   float: left;
   padding: 4px;
+  margin-bottom: 3em;
   border: 0;
 }
-header {
-  background-image: url("../img/colourbackground.jpg");
-  background-size: cover;
-  text-align: center;
+footer {
+  background-color: #4b2f48;
+  color: #fff;
+  font-size: .7rem;
+  margin: 0;
+  padding: 1em;
 }
 
-@media only screen and (min-width: 22em) {
+@media only screen and (min-width: 27em) {
   html {
     font-size: 110%;
     line-height: 1.4;
   }
   .logo {
-    margin: 1em;
+    margin: 1em 0;
     padding: .7em;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .masthead {
+    padding: 2em 0;
   }
 
   h1 {
@@ -104,6 +117,9 @@ header {
     width: 80px;
     margin: 2em;
   }
+  .masthead {
+    padding: 2em 0 .5em 0;
+  }
   header {
     text-align: left;
   }
@@ -120,7 +136,9 @@ header {
     position: absolute;
     top: 10em;
     left: 5em;
-
+  }
+  footer p {
+    padding-left: 25em;
   }
 }
 @media only screen and (min-width: 45em) {
@@ -144,11 +162,19 @@ header {
   h2 {
     padding-left: 15em;
   }
-  p {
-    clear: both;
+  main p {
     padding-top: 2rem;
   }
   .portrait{
+    top: 13em;
+    left: 9em;
+  }
+}
+@media only screen and (min-width: 67em) {
+  h1 {
+    padding-right: 55%;
+  }
+  .portrait {
     top: 13em;
     left: 9em;
   }
